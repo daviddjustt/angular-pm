@@ -1,0 +1,134 @@
+<div class="min-h-screen bg-gray-50 p-4 md:p-8 font-sans text-gray-800">
+
+  <div class="flex justify-between items-start border-b pb-4 mb-6">
+    <div>
+      <h1 class="text-2xl font-semibold text-blue-900">Requerimento - Aquisição de Arma de Fogo</h1>
+      <p class="text-sm text-blue-600 uppercase font-medium">REQUERIMENTO Nº: 2026211562 - Aquisição de Arma de Fogo - Data: 12/01/2026</p>
+    </div>
+    <button class="bg-red-500 text-white px-4 py-1 rounded text-sm hover:bg-red-600 flex items-center gap-2">
+      <span class="font-bold">×</span> Fechar
+    </button>
+  </div>
+
+  <div class="mb-8">
+    <button class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 text-sm mb-4">
+      + Incluir Arma de Fogo
+    </button>
+
+    <div class="overflow-x-auto border rounded-lg">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-gray-100 border-b text-gray-700 uppercase">
+          <tr>
+            <th class="p-3">Tipo do Armamento</th>
+            <th class="p-3">Marca</th>
+            <th class="p-3">Modelo</th>
+            <th class="p-3">Calibre</th>
+            <th class="p-3">País de Origem</th>
+            <th class="p-3">Quantidade</th>
+            <th class="p-3 text-center">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="7" class="p-4 text-center text-gray-500 italic">Nenhum registro encontrado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+    <div class="flex flex-col gap-1">
+      <label class="text-xs font-bold uppercase">RG</label>
+      <input type="text" class="border rounded p-2 focus:ring-2 focus:ring-blue-400 outline-none">
+    </div>
+    <div class="flex flex-col gap-1">
+      <label class="text-xs font-bold uppercase">Órgão expedidor</label>
+      <select class="border rounded p-2 bg-white"><option></option></select>
+    </div>
+    <div class="flex flex-col gap-1">
+      <label class="text-xs font-bold uppercase">UF</label>
+      <select class="border rounded p-2 bg-white"><option></option></select>
+    </div>
+    <div class="flex flex-col gap-1">
+      <label class="text-xs font-bold uppercase">Data de emissão RG</label>
+      <input type="date" class="border rounded p-2">
+    </div>
+    <div class="flex flex-col gap-1">
+      <label class="text-xs font-bold uppercase">Telefone</label>
+      <input type="text" placeholder="(79)99665-5223" class="border rounded p-2">
+    </div>
+    <div class="flex flex-col gap-1 md:col-span-2">
+      <label class="text-xs font-bold uppercase">Email</label>
+      <input type="email" placeholder="justin@gmail.com" class="border rounded p-2">
+    </div>
+  </div>
+
+  <div class="mb-8">
+    <label class="text-xs font-bold uppercase">Fornecedor</label>
+    <select class="w-full border rounded p-2 bg-white mt-1"><option></option></select>
+  </div>
+
+  <div class="mb-8">
+    <div class="bg-blue-600 text-white p-2 rounded-t-lg font-medium">
+      Endereço (para entrega da arma)
+    </div>
+    <div class="border p-4 rounded-b-lg bg-white grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="flex flex-col gap-1">
+        <label class="text-xs font-bold uppercase">CEP</label>
+        <input type="text" placeholder="49.042-000" class="border rounded p-2">
+      </div>
+      <div class="flex flex-col gap-1">
+        <label class="text-xs font-bold uppercase">UF</label>
+        <select class="border rounded p-2 bg-white"><option>SE</option></select>
+      </div>
+      <div class="flex flex-col gap-1 md:col-span-2">
+        <label class="text-xs font-bold uppercase">Cidade</label>
+        <select class="border rounded p-2 bg-white"><option>Aracaju</option></select>
+      </div>
+
+      <div class="flex flex-col gap-1 md:col-span-2">
+        <div class="flex justify-between items-center">
+            <label class="text-xs font-bold uppercase">Bairro</label>
+            <button class="bg-blue-600 text-white text-xs px-1 rounded">+</button>
+        </div>
+        <select class="border rounded p-2 bg-white"><option>São Conrado</option></select>
+      </div>
+      <div class="flex flex-col gap-1 md:col-span-2">
+        <div class="flex justify-between items-center">
+            <label class="text-xs font-bold uppercase">Logradouro</label>
+            <button class="bg-blue-600 text-white text-xs px-1 rounded">+</button>
+        </div>
+        <select class="border rounded p-2 bg-white"><option>Avenida Francisco José da Fonseca</option></select>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-start gap-2 mb-6">
+    <input type="checkbox" class="mt-1 h-5 w-5">
+    <p class="text-sm font-bold italic">Declaro que li e concordo com os termos e condições para aquisição de arma de fogo.</p>
+  </div>
+
+  <div class="bg-yellow-400 p-4 rounded-lg shadow mb-6 text-sm">
+    <div class="flex justify-between font-bold mb-2">
+      <span>Anexar os seguintes documentos para aprovação do requerimento...</span>
+      <span>—</span>
+    </div>
+    <ul class="space-y-1 list-none">
+      <li><strong>I -</strong> Anexo C com assinatura GOV.BR <button class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs ml-2">Gerar Anexo C</button></li>
+      <li><strong>II -</strong> Carteira Funcional em pdf;</li>
+      <li>... (demais itens)</li>
+    </ul>
+    <div class="mt-4 bg-yellow-500/20 p-3 rounded">
+        Para gerar a Guia de Recolhimento da União (GRU)... <button class="bg-blue-600 text-white px-2 py-0.5 rounded text-xs">Gerar GRU</button>
+        <p class="mt-2 text-xs opacity-80">Unidade Gestora: 167086 | Gestão: 00001 | Valor: R$ 25,00</p>
+    </div>
+  </div>
+
+  <div class="flex gap-4">
+    <button class="bg-green-600 text-white px-6 py-2 rounded font-bold hover:bg-green-700 flex items-center gap-2">
+      💾 Salvar
+    </button>
+  </div>
+
+</div>
